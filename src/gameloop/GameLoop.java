@@ -4,12 +4,12 @@ import javafx.application.Platform;
 
 public class GameLoop implements Runnable {
 
-    public GameLoop(Controller controller)
+    public GameLoop(gameloop.View view)
     {
-        this.controller = controller;
+        this.view = view;
     }
 
-    public Controller controller;
+    public gameloop.View view;
 
     private boolean running = false;
     private Thread thread;
@@ -80,10 +80,11 @@ public class GameLoop implements Runnable {
 
     private void tick()
     {
+        Platform.runLater(() -> view.tick());
         if (logicUpdate)//alleen renderen als er een update is geweest;
         {
             logicUpdate = false;
-            Platform.runLater(() -> controller.render());
+            Platform.runLater(() -> view.render());
         }
         else
         {
