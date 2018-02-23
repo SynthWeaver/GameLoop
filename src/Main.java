@@ -8,7 +8,7 @@ public class Main extends Application {
     public void start(Stage primaryStage){
         View view = new View(primaryStage);
         Controller controller = new Controller(view);
-        new GameLoop(view).start();
+        new GameLoop(controller).start();
 
         primaryStage.setScene(view.scene);
 

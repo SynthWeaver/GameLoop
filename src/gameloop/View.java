@@ -1,11 +1,12 @@
 package gameloop;
 
-public class View {
-    public void tick()
-    {
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
-    }
-
+public class View
+{
     public void render()
     {
 

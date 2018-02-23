@@ -22,13 +22,6 @@ public class View extends gameloop.View
     public Stage primaryStage;
 
 
-
-    @Override
-    public void tick()
-    {
-
-    }
-
     @Override
     public void render()
     {
