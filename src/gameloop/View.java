@@ -1,14 +1,6 @@
 package gameloop;
 
-import javafx.scene.Group;
-import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
-
-public class View
+public abstract class View
 {
-    public void render()
-    {
-
-    }
+    public abstract void render();
 }
