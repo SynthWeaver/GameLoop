@@ -1,4 +1,7 @@
+package controllers;
+
 import gameloop.GameLoop;
+import views.View;
 
 public class Controller extends gameloop.Controller{
 

@@ -1,3 +1,6 @@
+package views;
+
+import controllers.Controller;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
