@@ -12,7 +12,12 @@ public class GameLoop implements Runnable {
 
     private boolean running = false;
     private Thread thread;
-    public static boolean logicUpdate = false;
+    private static boolean logicUpdate = false;
+
+    public static void doLogicUpdate()
+    {
+        GameLoop.logicUpdate = true;
+    }
 
     public synchronized void start()
     {
